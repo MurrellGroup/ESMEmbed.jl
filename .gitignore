@@ -1,3 +1,11 @@
 /Manifest*.toml
 /docs/Manifest*.toml
 /docs/build/
+/.julia_depot/
+/.venv/
+/Manifest.toml
+/weights/
+*.safetensors
+*.npz
+*.meta.json
+.DS_Store
