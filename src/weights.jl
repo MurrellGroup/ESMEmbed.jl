@@ -176,8 +176,8 @@ end
 
 function load_ESM(;
     repo_id::AbstractString = "facebook/esmfold_v1",
-    filename::AbstractString = "esm.safetensors",
-    revision::AbstractString = "main",
+    filename::AbstractString = "model.safetensors",
+    revision::AbstractString = "refs/pr/6",
     cache::Bool = true,
     local_files_only::Bool = false,
     use_esm_attn_map::Bool = false,
