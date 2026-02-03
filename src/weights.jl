@@ -142,10 +142,10 @@ function load_esmfold_safetensors!(model::ESMFoldEmbed, path::AbstractString)
 end
 
 function _infer_esmfold_config(reader::SafeTensors.Reader)
-    keys = collect(keys(reader.header))
+    header_keys = collect(keys(reader.header))
 
     layer_ids = Int[]
-    for key in keys
+    for key in header_keys
         startswith(key, "esm.encoder.layer.") || continue
         parts = split(key, '.')
         length(parts) < 4 && continue
@@ -177,7 +177,7 @@ end
 function load_ESM(;
     repo_id::AbstractString = "facebook/esmfold_v1",
     filename::AbstractString = "model.safetensors",
-    revision::AbstractString = "refs/pr/6",
+    revision::AbstractString = "ba837a3",
     cache::Bool = true,
     local_files_only::Bool = false,
     use_esm_attn_map::Bool = false,

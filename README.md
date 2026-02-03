@@ -64,7 +64,7 @@ seq_ints = sequence_to_af2_indices("ACDEFGHIK")
 
 - `repo_id = "facebook/esmfold_v1"`
 - `filename = "model.safetensors"`
-- `revision = "refs/pr/6"`
+- `revision = "ba837a3"`
 
 Downloaded files are cached by HuggingFaceApi in your Julia depot (via OhMyArtifacts).
 You can override the source if you want to point at a PR or a specific commit:
