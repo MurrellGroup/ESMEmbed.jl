@@ -1,7 +1,7 @@
 name = "ESMEmbed"
 uuid = "92fcdd77-1b6e-4cb4-a5ce-af12488bb353"
-authors = ["Ben Murrell"]
 version = "1.0.0-DEV"
+authors = ["Ben Murrell"]
 
 [deps]
 BFloat16s = "ab4f0b2a-ad5b-11e8-123f-65d77653426b"
@@ -19,7 +19,7 @@ Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
 
 [compat]
 BFloat16s = "0.5, 0.6"
-Einops = "0.1.14"
+Einops = "0.1.14, 0.2"
 Flux = "0.16.9"
 HuggingFaceApi = "0.1"
 JSON = "1.4.0"
